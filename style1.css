@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-color: rgb(189, 145, 154);
+}
+.p{
+    background-image: url("sudipta.png");
+    background-color: rgb(189,145,154);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    top: 50%;
+}
+
+.birthday-card {
+    background-color: #c9cdc8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:  10 10px rgba(0, 0, 0, 0.12);
+    width: 300px;
+    height: 560px;
+    text-align: center;
+    left:50%;
+}
+
+.gift {
+    margin: 20px auto;
+}
+
+.gift img {
+    width: 100px;
+    height: 100px;
+}
+
+.balloons {
+    display: inline-block;
+    position: relative;
+}
+
+.balloons img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    animation: balloon-float 3s infinite;
+    transform: scale(0.8);
+}
+
+.balloons img:nth-child(1) {
+    animation-delay:0s;
+    left:-10%;
+}
+
+.balloons img:nth-child(2) {
+    animation-delay: 1s;
+    right:-10%;
+}
+
+.balloons img:nth-child(3) {
+    animation-delay: 2s;
+    left:30;
+}
+.balloons img:nth-child(4){
+    animation-delay: 1s;
+   position: absolute;
+   top: 0;
+   left:0;
+   width:200px;
+   height:200px;
+   animation: baloon-float s infinite;
+   transform: scale(0.5)
+}
+
+@keyframes balloon-float {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
